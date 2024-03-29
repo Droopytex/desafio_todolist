@@ -1,0 +1,97 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #ebecec;
+  display: flex;
+  justify-content: center;
+}
+.contenedor {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+h1 {
+  width: 1000px;
+}
+hr {
+  size: 100%;
+
+  background-color: #bfc1c1;
+}
+.contenTareas-estados {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+
+  .estados {
+    width: 20%;
+    #total-text {
+      font-size: 20px;
+    }
+    #total {
+      font-size: 20px;
+    }
+    #realizadas-text {
+      font-size: 15px;
+    }
+    #realizadas {
+      font-size: 15px;
+    }
+  }
+  .tareas {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #efefef;
+  }
+}
+
+input {
+  width: 80%;
+}
+li {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.estados-tareas {
+  display: flex;
+  font-size: 25px;
+}
+
+.ingresoData {
+  width: 100%;
+  .input-data {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    #txtIngreso {
+      width: 60%;
+      height: 40px;
+      border-radius: 5px;
+    }
+    #btn-Agregar {
+      width: 15%;
+      height: 40px;
+      border-radius: 5px;
+      background-color: #1a7742;
+      border-color: #1a7742;
+      color: #bfc1c1;
+      font-size: 15px;
+      font-weight: bold;
+    }
+  }
+  p {
+    font-size: 20px;
+    padding-left: 20px;
+  }
+}
