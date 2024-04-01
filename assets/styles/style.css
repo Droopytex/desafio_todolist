@@ -59,19 +59,30 @@ hr {
 }
 
 .btnagregar {
-  background-color: burlywood;
+  background-color: rgb(18, 239, 136);
 }
 input {
   width: 80%;
 }
-li {
-  font-size: 15px;
-  font-weight: lighter;
+
+.resumenTarea {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-size: 12px;
 }
 
+.title {
+  display: flex;
+  flex-direction: row;
+  font-weight: bolder;
+  justify-content: space-around;
+}
 .estados-tareas {
   display: flex;
   font-size: 25px;
+  flex-direction: column;
+  font-size: 10px;
 }
 
 .ingresoData {

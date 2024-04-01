@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/styles/style.css" />
-    <script defer src="/assets/js/todolist.js"></script>
     <title>Todo_List</title>
   </head>
   <body>
@@ -17,25 +16,35 @@
         <p>Nueva tarea</p>
         <div class="input-data">
           <input type="text" title="boton agregar" id="nuevaTarea" />
-          <button id="agregarTarea">Agregar</button>
+          <button class="btnagregar" id="agregarTarea">Agregar</button>
         </div>
       </div>
       <br /><br />
       <div class="contenTareas-estados">
         <div></div>
         <div class="estados">
-          <span id="cuenta-tareas">Total:</span><span id="totalTareas"></span><br />
+          <span id="cuenta-tareas">Total:</span><span id="totalTareas"></span
+          ><br />
           <span id="realizadas-text">Realizadas:</span
           ><span id="tareasCompletadas">0</span>
-        </div> 
-        <div class="checkTareas">
-          <ul id="tareas">
-          </ul>
         </div>
-
-          
+        <div class="resumenTarea">
+          <div class="title">
+            <p>Id</p>
+            <p>Tarea</p>
+            <p>Status</p>
+          </div>
+          <table id="tareas">
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+          </table>
         </div>
       </div>
     </div>
+    <script defer src="/assets/js/todolist.js"></script>
   </body>
 </html>
