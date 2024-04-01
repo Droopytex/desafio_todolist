@@ -48,6 +48,7 @@ function renderTareas() {
   listaDeTareas.innerHTML = html;
   actualizarContadoresTareas();
 }
+console.log(renderTareas);
 
 function tareaCompletada(id) {
   const tarea = tareas.find((t) => t.id === id);
