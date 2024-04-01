@@ -73,7 +73,9 @@ input {
 }
 
 .tabl1 {
+  display: flex;
   align-items: start;
+  font-size: 16px;
 }
 
 .title {
