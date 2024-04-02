@@ -8,9 +8,9 @@ var idIncial = 3;
 const tareas = [
   { id: 1, nombre: "Ir a la feria", completada: false },
   { id: 2, nombre: "Estudiar para el desafío", completada: false },
-  { id: 3, nombre: "Cocinar", completada: true },
+  { id: 3, nombre: "Cocinar algo", completada: true },
 ];
-
+// agregar nuevas tareas
 btnAgregar.addEventListener("click", () => {
   const nuevaTarea = {
     id: IdsConsecutivos(),
@@ -22,17 +22,18 @@ btnAgregar.addEventListener("click", () => {
   renderTareas();
 });
 
+// crear id de tareas cosnsecutivos
 function IdsConsecutivos() {
   idIncial += 1;
   return idIncial;
 }
-
+// borrar según id de tarea
 function borrar(id) {
   const index = tareas.findIndex((ele) => ele.id === id);
   tareas.splice(index, 1);
   renderTareas();
 }
-
+// Tabla + Checklist
 function renderTareas() {
   let html = "";
   for (let tarea of tareas) {
